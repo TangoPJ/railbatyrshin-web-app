@@ -15,7 +15,8 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "export": "next export"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
