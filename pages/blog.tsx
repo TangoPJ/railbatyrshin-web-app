@@ -4,7 +4,7 @@ import { NextPageWithLayout } from './page';
 
 const Blog: NextPageWithLayout = () => {
   return (
-    <section>
+    <section className="container">
       <h1>Blog</h1>
     </section>
   );

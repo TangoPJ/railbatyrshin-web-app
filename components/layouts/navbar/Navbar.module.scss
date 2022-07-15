@@ -1,0 +1,73 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  height: 64px;
+  z-index: 99999;
+  background-color: $bgColor--cultured;
+
+  @media screen and (max-width: 768px) {
+    height: 56px;
+  }
+
+  &__name,
+  &__lastName {
+    letter-spacing: -2px !important;
+    font-weight: 900 !important;
+    font-size: 2.125rem !important;
+    line-height: 2.5rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  &__name {
+    color: $textColor--japanese-indigo;
+  }
+
+  &__lastName {
+    color: $textColor--roman-silver;
+    margin-left: 4px;
+  }
+
+  &__menu {
+    display: flex;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+
+    @media screen and (max-width: 625px) {
+      display: none;
+    }
+  }
+
+  &__menuItem {
+    display: table;
+  }
+
+  &__menuLink {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    height: 100%;
+    letter-spacing: 0.0892857143em;
+    padding: 0 16px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+
+    &:hover {
+      background-color: $bgColor--bright-gray;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    }
+  }
+
+  &__active {
+    background-color: $bgColor--gainsboro;
+  }
+}

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { INavMenu, navMenu } from '../../../data';
+import MobileMenu from './mobile';
 import styles from './Navbar.module.scss';
 
 const Navbar: React.FC = () => {
@@ -12,7 +13,7 @@ const Navbar: React.FC = () => {
         <Link href={menuItem.path}>
           <a
             className={`
-              ${styles.navber__menuLink}
+              ${styles.navbar__menuLink}
               ${currentRoute === menuItem.path ? styles.navbar__active : ''}
             `}
           >
@@ -24,13 +25,18 @@ const Navbar: React.FC = () => {
   });
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navbar__logo}>
-        <span className={styles.navbar__name}>Rail</span>
-        <span className={styles.navbar__lastName}>Batyrshin</span>
-      </div>
-      <ul className={styles.navbar__menu}>{menu}</ul>
-    </nav>
+    <>
+      <nav className={styles.navbar}>
+        <Link href="/">
+          <a>
+            <span className={styles.navbar__name}>Rail</span>
+            <span className={styles.navbar__lastName}>Batyrshin</span>
+          </a>
+        </Link>
+        <ul className={styles.navbar__menu}>{menu}</ul>
+        <MobileMenu />
+      </nav>
+    </>
   );
 };
 
