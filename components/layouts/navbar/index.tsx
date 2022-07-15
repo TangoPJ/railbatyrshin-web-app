@@ -1,13 +1,23 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { INavMenu, navMenu } from '../../../data';
 import styles from './Navbar.module.scss';
 
 const Navbar: React.FC = () => {
-  const menu = navMenu.map((menuItem: INavMenu) => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+  const menu = navMenu.map((menuItem: INavMenu, index: number) => {
     return (
-      <li key={menuItem.name}>
+      <li className={styles.navbar__menuItem} key={`${menuItem.name}-${index}`}>
         <Link href={menuItem.path}>
-          <a>{menuItem.name.toUpperCase()}</a>
+          <a
+            className={`
+              ${styles.navber__menuLink}
+              ${currentRoute === menuItem.path ? styles.navbar__active : ''}
+            `}
+          >
+            {menuItem.name.toUpperCase()}
+          </a>
         </Link>
       </li>
     );
