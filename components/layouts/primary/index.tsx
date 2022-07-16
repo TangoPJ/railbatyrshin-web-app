@@ -18,7 +18,7 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
     const handleComplete = () => {
       return setTimeout(() => {
         return setLoading(false);
-      }, 300);
+      }, 600);
     };
 
     router.events.on('routeChangeStart', handleStart);

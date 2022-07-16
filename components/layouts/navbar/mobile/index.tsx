@@ -1,19 +1,38 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { INavMenu, navMenu } from '../../../../data';
 import styles from './Mobile.module.scss';
 
 const MobileMenu: React.FC = () => {
   const [active, setActive] = useState<Boolean>(false);
   const router = useRouter();
+  const ref = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const currentRoute = router.pathname;
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (
+        ref.current &&
+        !ref.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setActive(false);
+      }
+    };
+
+    window.addEventListener('click', handleClickOutside, true);
+    return () => window.removeEventListener('click', handleClickOutside, true);
+  }, [active]);
+
   const listMenuItems = navMenu.map((menu: INavMenu, index: number) => (
     <li className={styles.navMenu__menuItem} key={index}>
       <Link href={menu.path}>
         <a
           className={`
-          ${currentRoute === menu.path ? styles.active : ''}
+          ${currentRoute === menu.path && styles.active}
         `}
           onClick={() => setActive(false)}
         >
@@ -25,21 +44,26 @@ const MobileMenu: React.FC = () => {
 
   return (
     <>
-      <div
-        onClick={() => setActive(!active)}
-        className={`${styles.mobileButton} ${active ? styles.show : ''}`}
+      <button
+        ref={buttonRef}
+        type="button"
+        onClick={() => {
+          return setActive(!active);
+        }}
+        className={`${styles.mobileButton} ${active && styles.show}`}
       >
         <span
           className={`${styles.mobileButton__centerLine} ${
-            active ? styles.show : ''
+            active && styles.show
           }`}
         ></span>
-      </div>
-      <div
-        className={`${styles.sideNav} ${active ? styles.sideNavActive : ''}`}
+      </button>
+      <nav
+        ref={ref}
+        className={`${active && styles.sideNavActive} ${styles.sideNav}`}
       >
         <ul className={styles.sideNav__menu}>{listMenuItems}</ul>
-      </div>
+      </nav>
     </>
   );
 };
