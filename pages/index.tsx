@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Navbar from '../components/layouts/navbar';
 import PrimaryLayout from '../components/layouts/primary';
 import styles from '../styles/Home.module.scss';
 import { NextPageWithLayout } from './page';
@@ -23,10 +22,5 @@ const Home: NextPageWithLayout = () => {
 export default Home;
 
 Home.getLayout = (page) => {
-  return (
-    <PrimaryLayout>
-      <Navbar />
-      {page}
-    </PrimaryLayout>
-  );
+  return <PrimaryLayout>{page}</PrimaryLayout>;
 };
