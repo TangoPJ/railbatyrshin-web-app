@@ -19,7 +19,7 @@ const MobileMenu: React.FC = () => {
         buttonRef.current &&
         !buttonRef.current.contains(event.target)
       ) {
-        setActive(false);
+        return setActive(false);
       }
     };
 
@@ -36,7 +36,7 @@ const MobileMenu: React.FC = () => {
         `}
           onClick={() => setActive(false)}
         >
-          {menu.name}
+          {menu.name.toUpperCase()}
         </a>
       </Link>
     </li>
@@ -47,9 +47,8 @@ const MobileMenu: React.FC = () => {
       <button
         ref={buttonRef}
         type="button"
-        onClick={() => {
-          return setActive(!active);
-        }}
+        aria-label="menu"
+        onClick={() => setActive(!active)}
         className={`${styles.mobileButton} ${active && styles.show}`}
       >
         <span

@@ -1,6 +1,6 @@
-import 'animate.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import Navbar from '../components/layouts/navbar';
 import '../styles/globals.scss';
 import styles from './app.module.scss';
@@ -12,6 +12,11 @@ interface AppPropsWithLayout extends AppProps {
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => page);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <>
       <Head>
@@ -21,9 +26,11 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navbar />
-      <div className={styles.wrapper}>
-        {getLayout(<Component {...pageProps} />)}
-      </div>
+      {mounted && (
+        <main className={styles.wrapper}>
+          {getLayout(<Component {...pageProps} />)}
+        </main>
+      )}
     </>
   );
 };

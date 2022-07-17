@@ -34,7 +34,7 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children }) => {
       {loading ? (
         <div className={styles.loader}></div>
       ) : (
-        <main className={styles.main}>{children}</main>
+        <section className={styles.main}>{children}</section>
       )}
     </>
   );

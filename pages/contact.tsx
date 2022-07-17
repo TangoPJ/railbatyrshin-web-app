@@ -3,22 +3,22 @@ import Navbar from '../components/layouts/navbar';
 import PrimaryLayout from '../components/layouts/primary';
 import { NextPageWithLayout } from './page';
 
-const Blog: NextPageWithLayout = () => {
+const Contact: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Rail Batyrshin: Blog</title>
+        <title>Rail Batyrshin: Contact</title>
       </Head>
       <section className="container">
-        <h1>Blog page</h1>
+        <h1>Contact page</h1>
       </section>
     </>
   );
 };
 
-export default Blog;
+export default Contact;
 
-Blog.getLayout = (page) => {
+Contact.getLayout = (page) => {
   return (
     <PrimaryLayout>
       <Navbar />
