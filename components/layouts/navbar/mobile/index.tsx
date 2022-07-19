@@ -15,7 +15,7 @@ const MobileMenu: React.FC = () => {
   const handleToggle = () => {
     setActive(!isActive);
   };
-  
+
   useEffect(() => {
     const handleClickOutside = ({ target }: any) => {
       if (
@@ -53,7 +53,9 @@ const MobileMenu: React.FC = () => {
         ref={buttonRef}
         type="button"
         aria-label="menu"
-        className={`${styles.mobileButton} ${isActive ? styles['mobileButton--show'] : ''}`}
+        className={`${styles.mobileButton} ${
+          isActive ? styles['mobileButton--show'] : ''
+        }`}
         onClick={() => handleToggle()}
       >
         <span
@@ -64,7 +66,9 @@ const MobileMenu: React.FC = () => {
       </button>
       <nav
         ref={ref}
-        className={`${isActive ? styles['sideNav--show'] : ''} ${styles.sideNav}`}
+        className={`${isActive ? styles['sideNav--show'] : ''} ${
+          styles.sideNav
+        }`}
       >
         <ul className={styles.sideNav__menu}>{listMenuItems}</ul>
       </nav>
