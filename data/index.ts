@@ -4,7 +4,7 @@ export interface INavMenu {
 }
 
 export const navMenu: Array<INavMenu> = [
-  { name: 'Home', path: '/' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'home', path: '/' },
+  { name: 'blog', path: '/blog' },
+  { name: 'contact', path: '/contact' },
 ];

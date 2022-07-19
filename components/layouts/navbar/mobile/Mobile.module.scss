@@ -21,15 +21,15 @@
     top: 50%;
     margin-top: -1px;
     background: $bgColor--japanese-indigo;
-    transition: all 0.3s ease;
 
-    &.show {
+    &--show {
       opacity: 0;
     }
   }
 
   &::before,
   &::after {
+    transition: all 0.3s ease;
     position: absolute;
     display: block;
     content: '';
@@ -39,7 +39,6 @@
     top: 50%;
     margin-top: -1px;
     background: $bgColor--japanese-indigo;
-    transition: all 0.2s ease;
   }
 
   &::before {
@@ -50,7 +49,7 @@
     margin-top: 5px;
   }
 
-  &.show {
+  &--show {
     &::before {
       margin-top: -1px;
       transform: rotate(45deg);
@@ -82,15 +81,15 @@
       padding-left: 20px;
       border-bottom: 1px solid $borderColor--chinese-silver;
     }
+
+    &--active {
+      background-color: $bgColor--gainsboro;
+    }
   }
-}
 
-.sideNavActive {
-  transform: translateX(0%);
-  box-shadow: $boxShadow--primary;
-  transition: all 0.3s ease;
-}
-
-.active {
-  background-color: $bgColor--gainsboro;
+  &--show {
+    transform: translateX(0%);
+    box-shadow: $boxShadow--primary;
+    transition: all 0.3s ease;
+  }
 }
