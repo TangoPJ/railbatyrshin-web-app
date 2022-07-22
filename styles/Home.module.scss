@@ -1,0 +1,54 @@
+.header {
+  min-height: 500px;
+  position: relative;
+  background-color: $bgColor--bright-gray;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 6rem !important;
+    line-height: 6rem;
+    margin: 18px 0;
+    color: $textColor--japanese-indigo;
+
+    @media screen and (max-width: 768px) {
+      font-size: 4rem !important;
+      line-height: 4rem;
+    }
+
+    @media screen and (max-width: 485px) {
+      font-size: 3rem !important;
+      line-height: 3rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 2rem !important;
+      line-height: 2rem;
+    }
+  }
+
+  &__lines {
+    border-bottom: 0.3em solid $bgColor--purple-mountain-majesty;
+    border-top: 0.3em solid $bgColor--purple-mountain-majesty;
+    height: 1em;
+    transform: skew(-10deg);
+    max-width: 15em;
+    margin: auto;
+
+    @media screen and (max-width: 525px) {
+      max-width: 5em;
+      border-bottom: 0.2em solid $bgColor--purple-mountain-majesty;
+      border-top: 0.2em solid $bgColor--purple-mountain-majesty;
+      height: 0.6em;
+    }
+  }
+}
