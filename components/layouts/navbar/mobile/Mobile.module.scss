@@ -64,17 +64,17 @@
 
 .sideNav {
   position: fixed;
-  top: 0;
+  top: 56px;
   right: 0;
-  width: 256px;
-  height: 100%;
+  width: 200px;
   transform: translateX(100%);
   background-color: $bgColor--cultured;
   transition: all 0.3s ease;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
 
   &__menu {
-    margin-top: 56px;
-
     & > li > a {
       display: block;
       padding: 20px 0;

@@ -11,9 +11,17 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <header className={styles.header}>
         <div className={styles.header__content}>
-          <div className={styles.header__lines}></div>
-          <span className={styles.header__title}>JavaScript Developer</span>
-          <div className={styles.header__lines}></div>
+          <div
+            className={`animate__animated animate__bounceInLeft ${styles.header__lines}`}
+          ></div>
+          <span
+            className={`animate__animated animate__fadeIn ${styles.header__title}`}
+          >
+            JavaScript Developer
+          </span>
+          <div
+            className={`animate__animated animate__bounceInRight ${styles.header__lines}`}
+          ></div>
         </div>
       </header>
     </>

@@ -10,6 +10,7 @@
   height: 64px;
   z-index: 9;
   background-color: $bgColor--cultured;
+  box-shadow: 0 1px 9px -2px rgb(0 0 0 / 20%);
 
   @media screen and (max-width: 768px) {
     height: 56px;

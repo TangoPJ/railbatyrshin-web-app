@@ -1,3 +1,4 @@
+import 'animate.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
