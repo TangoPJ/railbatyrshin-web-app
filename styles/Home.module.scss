@@ -1,7 +1,11 @@
 .header {
   min-height: 500px;
   position: relative;
-  background-color: $bgColor--bright-gray;
+  background: url('../assets/images/header-bg.jpg'), #4495e6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
 
   &__content {
     position: absolute;
@@ -18,7 +22,7 @@
     font-size: 6rem !important;
     line-height: 6rem;
     margin: 18px 0;
-    color: $textColor--japanese-indigo;
+    color: $textColor--white-primary;
 
     @media screen and (max-width: 768px) {
       font-size: 4rem !important;
@@ -37,17 +41,17 @@
   }
 
   &__lines {
-    border-bottom: 0.3em solid $bgColor--purple-mountain-majesty;
-    border-top: 0.3em solid $bgColor--purple-mountain-majesty;
-    height: 1em;
+    border-bottom: 2px solid rgb(233, 81, 81);
+    border-top: 2px solid rgb(233, 81, 81);
+    height: 10px;
     transform: skew(-20deg) !important;
-    max-width: 15em;
+    max-width: 12em;
     margin: auto;
 
     @media screen and (max-width: 525px) {
       max-width: 5em;
-      border-bottom: 0.2em solid $bgColor--purple-mountain-majesty;
-      border-top: 0.2em solid $bgColor--purple-mountain-majesty;
+      border-bottom: 0.2em solid rgb(233, 81, 81);
+      border-top: 0.2em solid rgb(233, 81, 81);
       height: 0.6em;
     }
   }

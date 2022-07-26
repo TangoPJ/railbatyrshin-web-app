@@ -70,7 +70,6 @@
   transform: translateX(100%);
   background-color: $bgColor--cultured;
   transition: all 0.3s ease;
-  border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: hidden;
 
@@ -89,7 +88,6 @@
 
   &--show {
     transform: translateX(0%);
-    box-shadow: $boxShadow--primary;
     transition: all 0.3s ease;
   }
 }
