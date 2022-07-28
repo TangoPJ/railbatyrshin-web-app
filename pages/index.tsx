@@ -19,7 +19,6 @@ const Home: NextPageWithLayout = () => {
               alt="Rail Batyrshin"
               width={100}
               height={100}
-              quality={100}
             />
           </div>
           <h1 className={styles.header__title}>Rail Batyrshin</h1>
