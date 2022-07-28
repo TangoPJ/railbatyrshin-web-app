@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import myPhoto from '../assets/images/my-photo.avif';
 import PrimaryLayout from '../components/layouts/primary';
 import styles from '../styles/Home.module.scss';
+import myPhoto from './assets/images/my-photo.avif';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
