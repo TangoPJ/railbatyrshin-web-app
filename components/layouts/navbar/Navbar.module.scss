@@ -6,35 +6,47 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 16px;
-  height: 64px;
   z-index: 9;
-  background-color: $bgColor--cultured;
-  box-shadow: 0 1px 9px -2px rgb(0 0 0 / 20%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding-right: 16px;
 
-  @media screen and (max-width: 768px) {
-    height: 56px;
+  @media screen and (max-width: 625px) {
+    padding-right: 10px;
+  }
+
+  &__logo {
+    display: table;
+    color: $textColor--japanese-indigo;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 16px;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    &:hover {
+      color: $textColor--sea-blue;
+      transition: all 0.2s ease-in-out;
+      background-color: $bgColor--anti-flash-white;
+    }
   }
 
   &__name,
   &__lastName {
-    letter-spacing: -2px !important;
-    font-weight: 900 !important;
-    font-size: 2.125rem !important;
-    line-height: 2.5rem;
-
-    @media screen and (max-width: 480px) {
-      font-size: 1.8rem !important;
-    }
+    display: table-cell;
   }
 
   &__name {
-    color: $textColor--japanese-indigo;
+    padding-right: 0;
   }
 
   &__lastName {
-    color: $textColor--roman-silver;
-    margin-left: 4px;
+    padding-left: 8px;
   }
 
   &__menu {
@@ -57,9 +69,8 @@
     display: table-cell;
     vertical-align: middle;
     font-size: 0.875rem;
-    height: 100%;
     letter-spacing: 0.0892857143em;
-    padding: 0 16px;
+    padding: 20px 16px;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.6, 1);
 
     &:hover {

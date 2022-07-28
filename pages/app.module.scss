@@ -1,7 +1,7 @@
 .wrapper {
-  padding-top: 64px;
+  padding-top: 57.5px;
 
-  @media screen and (max-width: 768px) {
-    padding-top: 56px;
+  @media screen and (max-width: 375px) {
+    padding-top: 50px;
   }
 }

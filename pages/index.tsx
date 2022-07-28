@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import myPhoto from '../assets/images/my-photo.avif';
 import PrimaryLayout from '../components/layouts/primary';
 import styles from '../styles/Home.module.scss';
 import { NextPageWithLayout } from './page';
@@ -11,17 +13,16 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <header className={styles.header}>
         <div className={styles.header__content}>
-          <div
-            className={`animate__animated animate__bounceInLeft ${styles.header__lines}`}
-          ></div>
-          <span
-            className={`animate__animated animate__fadeIn ${styles.header__title}`}
-          >
-            JavaScript Developer
-          </span>
-          <div
-            className={`animate__animated animate__bounceInRight ${styles.header__lines}`}
-          ></div>
+          <div className={styles.header__image}>
+            <Image
+              src={myPhoto}
+              alt="Rail Batyrshin"
+              width={100}
+              height={100}
+              quality={100}
+            />
+          </div>
+          <h1 className={styles.header__title}>Rail Batyrshin</h1>
         </div>
       </header>
     </>

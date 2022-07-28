@@ -64,7 +64,7 @@
 
 .sideNav {
   position: fixed;
-  top: 56px;
+  top: 57.5px;
   right: 0;
   width: 200px;
   transform: translateX(100%);
@@ -72,6 +72,10 @@
   transition: all 0.3s ease;
   border-bottom-left-radius: 5px;
   overflow: hidden;
+
+  @media screen and (max-width: 375px) {
+    top: 50px;
+  }
 
   &__menu {
     & > li > a {

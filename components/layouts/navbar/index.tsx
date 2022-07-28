@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
     <>
       <nav className={styles.navbar}>
         <Link href="/">
-          <a>
+          <a className={styles.navbar__logo}>
             <span className={styles.navbar__name}>Rail</span>
             <span className={styles.navbar__lastName}>Batyrshin</span>
           </a>
