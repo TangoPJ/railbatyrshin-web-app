@@ -1,0 +1,44 @@
+.header {
+  padding: 32px 0;
+  background-color: $bgColor--cultured-light;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $textColor--arsenic;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.5rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    color: $textColor--dark-gray;
+    font-family: 'Merriweather', serif;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  &__company-link {
+    color: $textColor--rich-electric-blue;
+  }
+}
