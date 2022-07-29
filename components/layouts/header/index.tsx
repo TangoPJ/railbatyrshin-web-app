@@ -17,11 +17,22 @@ const Header: React.FC = () => {
         </div>
         <h1 className={styles.header__title}>Rail Batyrshin</h1>
         <h2 className={styles.header__subtitle}>
-          Hello & Welcome To My Site, I&apos;m a JavaScript developer with over a year experience in web development at <a href="https://maddevs.io" className={styles["header__company-link"]} target="_blank" rel="noreferrer">MadDevs</a>. My primary areas of focus and expertise are JavaScript, TypeScript, React, and Next.js.
+          Hello & Welcome To My Site, I&apos;m a JavaScript developer with over
+          a year experience in web development at{' '}
+          <a
+            href="https://maddevs.io"
+            className={styles['header__company-link']}
+            target="_blank"
+            rel="noreferrer"
+          >
+            MadDevs
+          </a>
+          . My primary areas of focus and expertise are JavaScript, TypeScript,
+          React, and Next.js.
         </h2>
       </div>
     </header>
   );
-}
+};
 
 export default Header;
