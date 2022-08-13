@@ -18,9 +18,5 @@ const Contact: NextPageWithLayout = () => {
 export default Contact;
 
 Contact.getLayout = (page) => {
-  return (
-    <PrimaryLayout>
-      {page}
-    </PrimaryLayout>
-  );
+  return <PrimaryLayout>{page}</PrimaryLayout>;
 };

@@ -18,9 +18,5 @@ const Blog: NextPageWithLayout = () => {
 export default Blog;
 
 Blog.getLayout = (page) => {
-  return (
-    <PrimaryLayout>
-      {page}
-    </PrimaryLayout>
-  );
+  return <PrimaryLayout>{page}</PrimaryLayout>;
 };
