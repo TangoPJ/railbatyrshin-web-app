@@ -30,15 +30,14 @@ const MobileMenu: React.FC = () => {
 
     window.addEventListener('click', handleClickOutside, true);
     return () => window.removeEventListener('click', handleClickOutside, true);
-  }, [isActive]);
+  }, [isActive, ref, buttonRef]);
 
   const listMenuItems = navMenu.map((menu: INavMenu, index: number) => (
     <li key={index}>
       <Link href={menu.path}>
         <a
-          className={`
-          ${currentRoute === menu.path ? styles['sideNav__menu--active'] : ''}
-        `}
+          className={`${currentRoute === menu.path ? styles['sideNav__menu--active'] : ''
+            }`}
           onClick={() => setActive(false)}
         >
           {menu.name.toUpperCase()}
@@ -53,22 +52,18 @@ const MobileMenu: React.FC = () => {
         ref={buttonRef}
         type="button"
         aria-label="menu"
-        className={`${styles.mobileButton} ${
-          isActive ? styles['mobileButton--show'] : ''
-        }`}
+        className={`${styles.mobileButton} ${isActive ? styles['mobileButton--show'] : ''
+          }`}
         onClick={() => handleToggle()}
       >
         <span
-          className={`${styles.mobileButton__centerLine} ${
-            isActive ? styles['mobileButton__centerLine--show'] : ''
-          }`}
+          className={`${styles.mobileButton__centerLine} ${isActive ? styles['mobileButton__centerLine--show'] : ''}`}
         ></span>
       </button>
       <nav
         ref={ref}
-        className={`${isActive ? styles['sideNav--show'] : ''} ${
-          styles.sideNav
-        }`}
+        className={`${isActive ? styles['sideNav--show'] : ''} ${styles.sideNav
+          }`}
       >
         <ul className={styles.sideNav__menu}>{listMenuItems}</ul>
       </nav>

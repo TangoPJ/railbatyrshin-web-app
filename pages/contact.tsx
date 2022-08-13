@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Navbar from '../components/layouts/navbar';
 import PrimaryLayout from '../components/layouts/primary';
 import { NextPageWithLayout } from './page';
 
@@ -21,7 +20,6 @@ export default Contact;
 Contact.getLayout = (page) => {
   return (
     <PrimaryLayout>
-      <Navbar />
       {page}
     </PrimaryLayout>
   );

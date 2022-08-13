@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import myPhoto from '../../../assets/images/my-photo.avif';
+import myPhoto from '../../assets/images/my-photo.avif';
 import styles from './Header.module.scss';
 
 const Header: React.FC = () => {

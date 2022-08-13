@@ -25,18 +25,16 @@ const Navbar: React.FC = () => {
   });
 
   return (
-    <>
-      <nav className={styles.navbar}>
-        <Link href="/">
-          <a className={styles.navbar__logo}>
-            <span className={styles.navbar__name}>Rail</span>
-            <span className={styles.navbar__lastName}>Batyrshin</span>
-          </a>
-        </Link>
-        <ul className={styles.navbar__menu}>{menu}</ul>
-        <MobileMenu />
-      </nav>
-    </>
+    <div className={styles.navbar}>
+      <Link href="/">
+        <a className={styles.navbar__logo}>
+          <span className={styles.navbar__name}>Rail</span>
+          <span className={styles.navbar__lastName}>Batyrshin</span>
+        </a>
+      </Link>
+      <ul className={styles.navbar__menu}>{menu}</ul>
+      <MobileMenu />
+    </div>
   );
 };
 
