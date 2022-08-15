@@ -41,7 +41,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var next_1 = __importDefault(require("next"));
-var dev = process.env.NODE_ENV !== "production";
+var dev = process.env.NODE_ENV !== 'production';
 var app = (0, next_1.default)({ dev: dev });
 var handle = app.getRequestHandler();
 var port = process.env.PORT || 3000;
@@ -55,7 +55,7 @@ var port = process.env.PORT || 3000;
             case 1:
                 _a.sent();
                 server = (0, express_1.default)();
-                server.all("*", function (req, res) {
+                server.all('*', function (req, res) {
                     return handle(req, res);
                 });
                 server.listen(port, function (err) {
