@@ -41,12 +41,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = __importDefault(require("express"));
 var next_1 = __importDefault(require("next"));
+var config_1 = require("./config");
 var dev = process.env.NODE_ENV !== 'production';
 var app = (0, next_1.default)({ dev: dev });
 var handle = app.getRequestHandler();
-var port = process.env.PORT || 3000;
+var port = Number(config_1.PORT) || 3000;
 (function () { return __awaiter(void 0, void 0, void 0, function () {
-    var server, e_1;
+    var server, error_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -61,12 +62,12 @@ var port = process.env.PORT || 3000;
                 server.listen(port, function (err) {
                     if (err)
                         throw err;
-                    console.log("> Ready on localhost:".concat(port, " - env ").concat(process.env.NODE_ENV));
+                    console.log("> Ready on http://localhost:".concat(port, " - env ").concat(process.env.NODE_ENV));
                 });
                 return [3 /*break*/, 3];
             case 2:
-                e_1 = _a.sent();
-                console.error(e_1);
+                error_1 = _a.sent();
+                console.error(error_1);
                 process.exit(1);
                 return [3 /*break*/, 3];
             case 3: return [2 /*return*/];

@@ -8,34 +8,32 @@ const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles['footer__inner-card']}>
-        <a href="https://github.com/TangoPJ" target="_blank" rel="noreferrer">
-          <Image
-            src={Github}
-            alt="Github"
-            width={36}
-            height={36}
-            className={styles['footer__icon']}
-          />
+        <a
+          href="https://github.com/TangoPJ"
+          className={styles['footer__icon']}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image src={Github} alt="Github" width={36} height={36} />
         </a>
-        <a href="#" target="_blank" rel="noreferrer">
-          <Image
-            src={Twitter}
-            alt="Github"
-            width={36}
-            height={36}
-            className={styles['footer__icon']}
-          />
+        <a
+          href="#"
+          className={styles['footer__icon']}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image src={Twitter} alt="Twitter" width={36} height={36} />
         </a>
-        <a href="#" target="_blank" rel="noreferrer">
-          <Image
-            src={Linkedin}
-            alt="Github"
-            width={36}
-            height={36}
-            className={styles['footer__icon']}
-          />
+        <a
+          href="#"
+          className={styles['footer__icon']}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image src={Linkedin} alt="Linkedin" width={36} height={36} />
         </a>
         <hr className={styles.footer__line} />
+        <p className={styles.footer__text}>© Rail Batyrshin 2022</p>
       </div>
     </footer>
   );

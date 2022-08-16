@@ -20,7 +20,7 @@ const port: number = Number(PORT) || 3000;
         `> Ready on http://localhost:${port} - env ${process.env.NODE_ENV}`
       );
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error(error);
     process.exit(1);
   }

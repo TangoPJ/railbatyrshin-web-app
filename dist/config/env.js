@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PORT = exports.PASSWORD = exports.EMAIL = void 0;
+require("dotenv/config");
+var EMAIL = process.env.EMAIL;
+exports.EMAIL = EMAIL;
+var PASSWORD = process.env.PASSWORD;
+exports.PASSWORD = PASSWORD;
+var PORT = process.env.PORT;
+exports.PORT = PORT;
