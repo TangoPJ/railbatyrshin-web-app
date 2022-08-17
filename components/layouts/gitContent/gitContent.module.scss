@@ -1,0 +1,19 @@
+.git-bg {
+  background-color: $bgColor--deep-koamaru;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  &__title {
+    color: $textColor--bright-gray;
+    font-size: 3rem;
+    line-height: 3.125rem;
+    margin-bottom: 16px;
+    font-weight: 300;
+
+    @media screen and (max-width: 960px) {
+      font-size: 2.125rem;
+      line-height: 2.5rem;
+    }
+  }
+}
