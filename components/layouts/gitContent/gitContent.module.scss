@@ -17,3 +17,72 @@
     }
   }
 }
+
+.cards {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-right: -12px;
+  margin-left: -12px;
+  grid-auto-rows: minmax(300px, 1fr);
+  grid-gap: 24px;
+
+  &__card {
+    border-radius: 4px;
+    background-color: $bgColor--white-primary;
+    color: $textColor--japanese-indigo;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card-title {
+    font-size: 1.25rem;
+    padding: 16px;
+    padding-bottom: 13px;
+    color: $textColor--japanese-indigo;
+    margin: 0;
+  }
+
+  &__card-subtitle {
+    padding: 16px;
+    padding-top: 0;
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0, .6);
+  }
+
+  &__card-icon:nth-child(3) {
+    margin-left: 8px;
+  }
+
+  &__card-description {
+    padding: 16px;
+    padding-top: 0;
+    line-height: 1.375rem;
+    color: rgba(0,0,0,.6);
+  }
+
+  &__card-line {
+    width: 90%;
+    border-width: thin 0 0;
+    max-height: 0;
+    border-color: rgba(0,0,0, .12);
+  }
+
+  &__card-footer {
+    padding: 16px;
+    text-align: right;
+    color: $textColor--japanese-indigo;
+    caret-color: $textColor--japanese-indigo;
+    font-weight: 700;
+    padding-bottom: 24px;
+
+    &--link {
+      margin-top: 15px;
+    }
+  }
+}
