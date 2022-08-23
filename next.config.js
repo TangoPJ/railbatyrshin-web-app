@@ -11,10 +11,6 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "_vars.scss";`,
   },
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
 };
 
 module.exports = nextConfig;
