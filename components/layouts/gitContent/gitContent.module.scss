@@ -52,7 +52,7 @@
     padding-bottom: 36px;
     display: flex;
     align-items: center;
-    color: rgba(0,0,0, .6);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &__card-icon:nth-child(3) {
@@ -63,14 +63,14 @@
     padding: 16px;
     padding-top: 0;
     line-height: 1.375rem;
-    color: rgba(0,0,0,.6);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &__card-line {
     width: 90%;
     border-width: thin 0 0;
     max-height: 0;
-    border-color: rgba(0,0,0, .12);
+    border-color: rgba(0, 0, 0, 0.12);
   }
 
   &__card-footer {
