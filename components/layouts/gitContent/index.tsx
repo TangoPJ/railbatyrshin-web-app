@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import {
   getInfoFromGit,
   GITHUB_INFO,
-  USER,
+  USER
 } from '../../../api/getInfoFromGithub';
 import Fork from '../../../assets/images/svg/fork.svg';
 import Star from '../../../assets/images/svg/star.svg';
@@ -46,13 +46,13 @@ export const GitContent: React.FC = () => {
                   <p className={styles['cards__card-title']}>{repo.name}</p>
                   <div className={styles['cards__card-subtitle']}>
                     <span className={styles['cards__card-icon']}>
-                      <Image src={Star} alt="Github" width={25} height={25} />
+                      <Image src={Star} alt="Star" width={25} height={25} />
                     </span>
                     <span className={styles['cards__card-text']}>
                       {repo.stars}
                     </span>
                     <span className={styles['cards__card-icon']}>
-                      <Image src={Fork} alt="Github" width={20} height={20} />
+                      <Image src={Fork} alt="Fork" width={20} height={20} />
                     </span>
                     <span className={styles['cards__card-text']}>
                       {repo.forks}

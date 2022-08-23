@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           <Image src={Twitter} alt="Twitter" width={36} height={36} />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/rail-batyrshin-852125235/"
           className={styles['footer__icon']}
           target="_blank"
           rel="noreferrer"
