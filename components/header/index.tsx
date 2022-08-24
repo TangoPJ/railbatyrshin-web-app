@@ -30,6 +30,17 @@ const Header: React.FC = () => {
           </a>
           . My primary areas of focus and expertise are JavaScript, TypeScript,
           React, and Next.js.
+          <br />
+          <br />
+          You can also check out my{' '}
+          <a
+            href="https://railbatyrshin.me/blog/"
+            className={styles['header__company-link']}
+            rel="noreferrer"
+          >
+            Blog
+          </a>{' '}
+          to see the articles I&apos;ve written.
         </h2>
       </div>
     </header>

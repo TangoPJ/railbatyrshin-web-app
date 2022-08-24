@@ -20,6 +20,8 @@ export const GitContent: React.FC = () => {
       { user: 'TangoPJ', repository: 'railbatyrshin-web-app' },
       { user: 'maddevsio', repository: 'maddevs' },
       { user: 'maddevsio', repository: 'mad-radiator' },
+      { user: 'maddevsio', repository: 'seo-analyzer' },
+      { user: 'HowProgrammingWorks', repository: 'Book' },
     ];
     const fetchData = async (urls: Array<USER>) => {
       const repositories = await getInfoFromGit(urls);
