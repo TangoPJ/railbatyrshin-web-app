@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import {
   getInfoFromGit,
   GITHUB_INFO,
-  USER
+  USER,
 } from '../../../api/getInfoFromGithub';
 import Fork from '../../../assets/images/svg/fork.svg';
 import Star from '../../../assets/images/svg/star.svg';
