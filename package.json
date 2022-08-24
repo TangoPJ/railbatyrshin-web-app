@@ -1,5 +1,6 @@
 {
-  "name": "railbatyrshin-web-app",
+  "name": "Web application of Rail Batyrshin",
+  "description": "The web application is built on Nuxt.js",
   "version": "0.1.0",
   "private": true,
   "engines": {
