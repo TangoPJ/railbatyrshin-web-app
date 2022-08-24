@@ -1,0 +1,41 @@
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}
+
+.dot-carousel {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: $bgColor--white-primary;
+  color: $textColor--white-primary;
+  box-shadow: 9984px 0 0 0 $boxShadow--white-primary,
+    9999px 0 0 0 $boxShadow--white-primary,
+    10014px 0 0 0 $boxShadow--white-primary;
+  animation: dotCarousel 1.5s infinite linear;
+}
+
+@keyframes dotCarousel {
+  0% {
+    box-shadow: 9984px 0 0 -1px $boxShadow--white-primary,
+      9999px 0 0 1px $boxShadow--white-primary,
+      10014px 0 0 -1px $boxShadow--white-primary;
+  }
+  50% {
+    box-shadow: 10014px 0 0 -1px $boxShadow--white-primary,
+      9984px 0 0 -1px $boxShadow--white-primary,
+      9999px 0 0 1px $boxShadow--white-primary;
+  }
+  100% {
+    box-shadow: 9999px 0 0 1px $boxShadow--white-primary,
+      10014px 0 0 -1px $boxShadow--white-primary,
+      9984px 0 0 -1px $boxShadow--white-primary;
+  }
+}
