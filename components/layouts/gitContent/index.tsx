@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import {
   getInfoFromGit,
   GITHUB_INFO,
-  USER,
+  USER
 } from '../../../api/getInfoFromGithub';
 import Fork from '../../../assets/images/svg/fork.svg';
 import Star from '../../../assets/images/svg/star.svg';
@@ -59,7 +59,7 @@ export const GitContent: React.FC = () => {
                     </span>
                   </div>
                   <p className={styles['cards__card-description']}>
-                    {repo.description}
+                    {repo.description ? repo.description : 'No description'}
                   </p>
                 </div>
                 <div className={styles['cards__card-footer']}>
