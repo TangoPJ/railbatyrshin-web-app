@@ -24,7 +24,6 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-right: -12px;
   margin-left: -12px;
-  grid-auto-rows: minmax(300px, 1fr);
   grid-gap: 24px;
 
   &__card {
@@ -49,7 +48,6 @@
   &__card-subtitle {
     padding: 16px;
     padding-top: 0;
-    padding-bottom: 36px;
     display: flex;
     align-items: center;
     color: rgba(0, 0, 0, 0.6);
