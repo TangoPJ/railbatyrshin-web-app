@@ -16,9 +16,7 @@ const port: number = Number(PORT) || 3000;
     });
     server.listen(port, (err?: any) => {
       if (err) throw err;
-      console.log(
-        `> Ready on http://localhost:${port} - env ${process.env.NODE_ENV}`
-      );
+      console.log(`> Ready on http://localhost:${port}`);
     });
   } catch (error) {
     console.error(error);

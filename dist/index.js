@@ -62,7 +62,7 @@ var port = Number(config_1.PORT) || 3000;
                 server.listen(port, function (err) {
                     if (err)
                         throw err;
-                    console.log("> Ready on http://localhost:".concat(port, " - env ").concat(process.env.NODE_ENV));
+                    console.log("> Ready on http://localhost:".concat(port));
                 });
                 return [3 /*break*/, 3];
             case 2:
