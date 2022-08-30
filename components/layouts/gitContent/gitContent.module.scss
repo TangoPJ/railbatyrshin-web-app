@@ -26,6 +26,12 @@
   margin-left: -12px;
   grid-gap: 24px;
 
+  @media screen and (max-width: 375px) {
+    padding: 0;
+    grid-template-columns: unset;
+    margin: 0;
+  }
+
   &__card {
     border-radius: 4px;
     background-color: $bgColor--white-primary;
