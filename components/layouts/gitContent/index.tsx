@@ -13,7 +13,7 @@ import styles from './gitContent.module.scss';
 
 export const GitContent: React.FC = () => {
   const [repos, setRepos] = useState<Array<GITHUB_INFO>>([]);
-
+  // todo: research react-query
   useEffect(() => {
     const urls = [
       { user: 'fakng-agrgtr', repository: 'fakng-ui' },

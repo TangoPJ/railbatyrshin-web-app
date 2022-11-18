@@ -36,7 +36,6 @@ export const getInfoFromGit = async (urls: Array<USER>): Promise<any> => {
         url: html_url,
       });
     } catch (error) {
-      console.log(error);
       throw new Error(`Error: ${error}`);
     }
   }
