@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             MadDevs
           </a>
           . My primary areas of focus and expertise are JavaScript, TypeScript,
-          React, and Next.js.
+          React/Redux and NextJS.
           <br />
           <br />
           You can also check out my{' '}
