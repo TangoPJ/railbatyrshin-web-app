@@ -34,15 +34,14 @@ const MobileMenu: React.FC = () => {
 
   const listMenuItems = navMenu.map((menu: INavMenu, index: number) => (
     <li key={index}>
-      <Link href={menu.path}>
-        <a
-          className={`${
-            currentRoute === menu.path ? styles['sideNav__menu--active'] : ''
-          }`}
-          onClick={() => setActive(false)}
-        >
-          {menu.name.toUpperCase()}
-        </a>
+      <Link
+        href={menu.path}
+        className={`${
+          currentRoute === menu.path ? styles['sideNav__menu--active'] : ''
+        }`}
+        onClick={() => setActive(false)}
+      >
+        {menu.name.toUpperCase()}
       </Link>
     </li>
   ));

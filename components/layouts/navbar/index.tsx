@@ -10,15 +10,14 @@ const Navbar: React.FC = () => {
   const menu = navMenu.map((menuItem: INavMenu, index: number) => {
     return (
       <li className={styles.navbar__menuItem} key={`${menuItem.name}-${index}`}>
-        <Link href={menuItem.path}>
-          <a
-            className={`
+        <Link
+          href={menuItem.path}
+          className={`
               ${styles.navbar__menuLink}
               ${currentRoute === menuItem.path ? styles.navbar__active : ''}
             `}
-          >
-            {menuItem.name.toUpperCase()}
-          </a>
+        >
+          {menuItem.name.toUpperCase()}
         </Link>
       </li>
     );
@@ -26,11 +25,9 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={styles.navbar}>
-      <Link href="/">
-        <a className={styles.navbar__logo}>
-          <span className={styles.navbar__name}>Rail</span>
-          <span className={styles.navbar__lastName}>Batyrshin</span>
-        </a>
+      <Link href="/" className={styles.navbar__logo}>
+        <span className={styles.navbar__name}>Rail</span>
+        <span className={styles.navbar__lastName}>Batyrshin</span>
       </Link>
       <ul className={styles.navbar__menu}>{menu}</ul>
       <MobileMenu />

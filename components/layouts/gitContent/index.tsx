@@ -71,14 +71,13 @@ export const GitContent: React.FC = () => {
                     </div>
                     <div className={styles['cards__card-footer']}>
                       <hr className={styles['cards__card-line']} />
-                      <Link href={repo.url}>
-                        <a
-                          target="_blank"
-                          className={styles['cards__card-footer--link']}
-                          rel="noopener noreferrer"
-                        >
-                          VIEW REPO
-                        </a>
+                      <Link
+                        href={repo.url}
+                        target="_blank"
+                        className={styles['cards__card-footer--link']}
+                        rel="noopener noreferrer"
+                      >
+                        VIEW REPO
                       </Link>
                     </div>
                   </div>
