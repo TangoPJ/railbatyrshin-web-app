@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Github from '../../assets/images/svg/github-icon.svg';
-import Linkedin from '../../assets/images/svg/linkedin-icon.svg';
-import Twitter from '../../assets/images/svg/twitter-icon.svg';
+import Github from '../../../assets/images/svg/github-icon.svg';
+import Linkedin from '../../../assets/images/svg/linkedin-icon.svg';
+import Twitter from '../../../assets/images/svg/twitter-icon.svg';
 import styles from './Footer.module.scss';
 
 const Footer: React.FC = () => {

@@ -2,6 +2,7 @@ import 'animate.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
+import Footer from '../components/layouts/footer';
 import Navbar from '../components/layouts/navbar';
 import '../styles/globals.scss';
 import styles from './app.module.scss';
@@ -32,6 +33,7 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
           {getLayout(<Component {...pageProps} />)}
         </main>
       )}
+      <Footer />
     </>
   );
 };

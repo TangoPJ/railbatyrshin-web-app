@@ -1,0 +1,35 @@
+.blog-header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: $bgColor--cultured;
+  background: linear-gradient(
+    141deg,
+    rgba(62, 66, 100, 0.6509803922),
+    #2c3e51,
+    71%,
+    rgba(62, 66, 100, 0.6509803922)
+  );
+
+  @media screen and (max-width: 960px) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 3.125rem;
+    letter-spacing: normal;
+    font-weight: 700;
+
+    @media screen and (max-width: 960px) {
+      font-size: 2.125rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.0073529412em;
+    }
+  }
+}

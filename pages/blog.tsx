@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import PrimaryLayout from '../components/layouts/primary';
+import styles from '../styles/Blog.module.scss';
 import { NextPageWithLayout } from './page';
 
 const Blog: NextPageWithLayout = () => {
@@ -8,8 +9,10 @@ const Blog: NextPageWithLayout = () => {
       <Head>
         <title>Rail Batyrshin: Blog</title>
       </Head>
-      <section className="container">
-        <h1>Blog page</h1>
+      <section className={styles['blog-header']}>
+        <div className="container">
+          <h1 className={styles['blog-header__title']}>My Blog Posts</h1>
+        </div>
       </section>
     </>
   );

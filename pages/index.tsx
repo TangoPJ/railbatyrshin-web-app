@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from '../components/footer';
 import Header from '../components/header';
 import { GitContent } from '../components/layouts/gitContent';
 import PrimaryLayout from '../components/layouts/primary';
@@ -13,7 +12,6 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <Header />
       <GitContent />
-      <Footer />
     </>
   );
 };
