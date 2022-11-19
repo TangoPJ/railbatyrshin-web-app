@@ -11,6 +11,9 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
     prependData: `@import "_vars.scss";`,
   },
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
