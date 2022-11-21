@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import {
   getInfoFromGit,
   GITHUB_INFO,
-  USER,
+  USER
 } from '../../../api/getInfoFromGithub';
 import Fork from '../../../assets/images/svg/fork.svg';
 import Star from '../../../assets/images/svg/star.svg';
@@ -16,7 +16,7 @@ export const GitContent: React.FC = () => {
   // todo: research react-query
   useEffect(() => {
     const urls = [
-      { user: 'fakng-agrgtr', repository: 'fakng-ui' },
+      { user: 'enjiai', repository: 'front' },
       { user: 'TangoPJ', repository: 'railbatyrshin-web-app' },
       { user: 'maddevsio', repository: 'maddevs' },
       { user: 'maddevsio', repository: 'mad-radiator' },
