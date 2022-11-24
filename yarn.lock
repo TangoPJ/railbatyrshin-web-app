@@ -2264,7 +2264,7 @@
     "@prismicio/types-internal" "0.2.10"
     tslib "^2.3.1"
 
-"@prismicio/client@^6.6", "@prismicio/client@^6.7.1":
+"@prismicio/client@^6.6":
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.7.1.tgz#2c4a514a6e3865008716e3d2cbabaa0cb919090b"
   integrity sha512-XIFSZtLjxnpQavu2R7jIqmnFvUqRRzHwjXHt/fb0N550rFLQM4tnwDuSR3VY6k/TG+M5zvH+PHJuXGNnv73qUQ==
@@ -2277,7 +2277,7 @@
   resolved "https://registry.yarnpkg.com/@prismicio/custom-types-client/-/custom-types-client-0.0.7.tgz#f55ee5f1d5f9e1307ed2ecca6a5e47dff1ecb91a"
   integrity sha512-pf0rG1rwKAEQ5WeGTG4vyxzW6FFG2iySgrGCAbil5XvHTajwJ1qdG53h0bU71AQRXZmL7b48YFdI7DQcy5ASFw==
 
-"@prismicio/helpers@^2.3.1", "@prismicio/helpers@^2.3.3", "@prismicio/helpers@^2.3.5", "@prismicio/helpers@^2.3.6":
+"@prismicio/helpers@^2.3.3":
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/@prismicio/helpers/-/helpers-2.3.6.tgz#77d063cc7843d826570bd5b914bd799495abf61f"
   integrity sha512-pXTm4lPbi/9YWSj1jBen74oROBzwjEEJ6KXaIUMpdyepG7i005/IddsCEbs4dQJbZ1bzfCA5C+DBQANdWXTpxw==
@@ -2302,53 +2302,12 @@
     newtype-ts "^0.3.5"
     tslib "^2.3.1"
 
-"@prismicio/next@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@prismicio/next/-/next-1.0.2.tgz#76dcc6357a0a74cb69af52cf1821874307bcb7e5"
-  integrity sha512-QGUe8nIEawMDj7MuO9ZP497hwiKUtO+ZIpyHeoMul7+2t4p36wgrKIETVlDD+J8W+K8T9Ayj/zsKbH+BQQmRhA==
-  dependencies:
-    "@prismicio/helpers" "^2.3.5"
-    "@prismicio/types" "^0.2.3"
-    imgix-url-builder "^0.0.3"
-
-"@prismicio/react@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@prismicio/react/-/react-2.5.0.tgz#2fa27467e153db8d761b72eeec648ac4e7ed910b"
-  integrity sha512-1EYdvoU2bpVEkmVDDVyTUK22C580tTWR96HJ9PMUex0oGeJLBAMKiRinyachN42r1uCH5nRAH54A90ZtBjjZhw==
-  dependencies:
-    "@prismicio/helpers" "^2.3.1"
-    "@prismicio/richtext" "^2.0.1"
-
-"@prismicio/richtext@^2.0.1", "@prismicio/richtext@^2.1.1":
+"@prismicio/richtext@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@prismicio/richtext/-/richtext-2.1.1.tgz#45b76b0bcfe40a5465c14d7d458e3354f6510068"
   integrity sha512-/99JR2NUU2WV0025eAIqjd9OnF4ITaM57SVuhLc1XBUgnJe0HZrC9f24YKVW43jFR5HYTJtLgz01WjEddymqmA==
   dependencies:
     "@prismicio/types" "^0.2.0"
-
-"@prismicio/slice-simulator-com@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@prismicio/slice-simulator-com/-/slice-simulator-com-0.4.0.tgz#135d468666b933b3799b94380c0ddbfdcd1dbea4"
-  integrity sha512-W0X68OW6AWJ0XmnvpgDfQ8eV+cLVeSGCmCyWnoVAcPfPLCcXNtRiGVw7WHvobo/ApWBsSIJPey5ZS+7x4H242Q==
-  dependencies:
-    statuses "^2.0.1"
-
-"@prismicio/slice-simulator-core@^0.2.1":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@prismicio/slice-simulator-core/-/slice-simulator-core-0.2.6.tgz#465929f1acc840d2dec495c080afb385d2a4ed68"
-  integrity sha512-Stq+e0PtLtaH5HctjPPLdFhAWpwIrSGmEJUFLH2Ur0le4Uyvzjt+KmDv7wuiOqjVa33N4/9JIRC5soezIRKWJA==
-  dependencies:
-    "@prismicio/slice-simulator-com" "^0.4.0"
-    "@prismicio/types" "^0.2.0"
-    fp-ts "^2.12.1"
-    io-ts "^2.2.16"
-
-"@prismicio/slice-simulator-react@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@prismicio/slice-simulator-react/-/slice-simulator-react-0.2.2.tgz#e12602def4c23c324a0a9f39c0ec3dbbd06a2681"
-  integrity sha512-GfAP4nR01OhsahrNOhc58L0sVDcieU5AWEuuiRN55txQjKgaAl5GVtn0V6Pz4albnY4KKvLlQIffcgy2W+L9TQ==
-  dependencies:
-    "@prismicio/slice-simulator-core" "^0.2.1"
 
 "@prismicio/types-internal@0.2.10":
   version "0.2.10"
@@ -5674,7 +5633,7 @@ cross-env@^7.0.3:
   dependencies:
     cross-spawn "^7.0.1"
 
-cross-fetch@3.1.5:
+cross-fetch@3.1.5, cross-fetch@^3.0.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
   integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
@@ -7104,7 +7063,7 @@ forwarded@0.2.0:
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
 
-fp-ts@^2.11.5, fp-ts@^2.11.8, fp-ts@^2.12.1:
+fp-ts@^2.11.5, fp-ts@^2.11.8:
   version "2.13.1"
   resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.13.1.tgz#1bf2b24136cca154846af16752dc29e8fa506f2a"
   integrity sha512-0eu5ULPS2c/jsa1lGFneEFFEdTbembJv8e4QKXeVJ3lm/5hyve06dlKZrpxmMwJt6rYen7sxmHHK2CLaXvWuWQ==
@@ -10379,6 +10338,35 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==
 
+prismic-helpers@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/prismic-helpers/-/prismic-helpers-1.0.3.tgz#cc1aa184f8791ed6b0a1775a9eb68a74a83f741e"
+  integrity sha512-eGCSflFwsWeXe7BdqWWGjjoaq1SPr61Y55xIUkgYumKFmfJsK9TVcSkRp0rdwW0hGnnDSRvjJwIo2kkDwG7KxA==
+
+prismic-javascript@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/prismic-javascript/-/prismic-javascript-3.0.2.tgz#a6dcc98014a2bbcc6232954d9295b56cde453390"
+  integrity sha512-9RpituEVE/eZAlj+vUVy61z2IQJdL0zRYuy+IHdiUA7/37zoiCE/Z0AbI0zAWyi5UDXizgQ2TuQTLkOm62KGwA==
+  dependencies:
+    cross-fetch "^3.0.5"
+
+prismic-reactjs@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/prismic-reactjs/-/prismic-reactjs-1.3.4.tgz#8d58f46b7818f04d34d80fcb4916a1fda4f9c63a"
+  integrity sha512-f2k8VOC5p8F9QOS1DIfXgU9HBRQgoj3vpPIzbUlKo6PvEW+jbcJIN2MOCscuvgh7JDB2npUS3nHe4lhjbSRofA==
+  dependencies:
+    prismic-helpers "^1.0.3"
+    prismic-richtext "^1.0.3"
+    prop-types "^15.7.2"
+
+prismic-richtext@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/prismic-richtext/-/prismic-richtext-1.0.3.tgz#ce8c8c18d65b01f1036f222b993ad2de700199fe"
+  integrity sha512-ZM45dVPL713+oDpt8ysWRY2pw3esBxRrqBlUO+q/T0WK0SNVSq29tQYhVdIALd8hRfF7X1lfpW0Q0YymEdh0AA==
+  dependencies:
+    ramda "^0.26.1"
+    uuid "^3.3.2"
+
 prismic-ts-codegen@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/prismic-ts-codegen/-/prismic-ts-codegen-0.1.5.tgz#75d6933c881f8c436b7f778e0c54591952256953"
@@ -10593,6 +10581,11 @@ quick-lru@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
+
+ramda@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
+  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
 ramda@^0.28.0:
   version "0.28.0"
@@ -11657,7 +11650,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-statuses@2.0.1, statuses@^2.0.1:
+statuses@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==

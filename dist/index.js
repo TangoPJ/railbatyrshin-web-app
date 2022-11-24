@@ -56,9 +56,7 @@ var port = Number(config_1.PORT) || 3000;
             case 1:
                 _a.sent();
                 server = (0, express_1.default)();
-                server.all('*', function (req, res) {
-                    return handle(req, res);
-                });
+                server.get('*', function (req, res) { return handle(req, res); });
                 server.listen(port, function (err) {
                     if (err)
                         throw err;

@@ -1,13 +1,8 @@
-import { PrismicPreview } from '@prismicio/next';
-import { PrismicProvider } from '@prismicio/react';
 import 'animate.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
 import Footer from '../components/layouts/footer';
 import Navbar from '../components/layouts/navbar';
-import { repositoryName } from '../prismicio';
 import '../styles/globals.scss';
 import styles from './app.module.scss';
 import { NextPageWithLayout } from './page';
@@ -18,10 +13,6 @@ interface AppPropsWithLayout extends AppProps {
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => page);
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <>
@@ -32,15 +23,9 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navbar />
-      <PrismicProvider internalLinkComponent={Link}>
-        <PrismicPreview repositoryName={repositoryName}>
-          {mounted && (
-            <main className={styles.wrapper}>
-              {getLayout(<Component {...pageProps} />)}
-            </main>
-          )}
-        </PrismicPreview>
-      </PrismicProvider>
+      {<main className={styles.wrapper}>
+        {getLayout(<Component {...pageProps} />)}
+      </main>}
       <Footer />
     </>
   );

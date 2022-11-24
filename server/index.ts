@@ -11,9 +11,7 @@ const port: number = Number(PORT) || 3000;
   try {
     await app.prepare();
     const server = express();
-    server.all('*', (req: Request, res: Response) => {
-      return handle(req, res);
-    });
+    server.get('*', (req: Request, res: Response) => handle(req, res));
     server.listen(port, (err?: any) => {
       if (err) throw err;
       console.log(`> Ready on http://localhost:${port}`);
