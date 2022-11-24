@@ -23,9 +23,11 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Navbar />
-      {<main className={styles.wrapper}>
-        {getLayout(<Component {...pageProps} />)}
-      </main>}
+      {
+        <main className={styles.wrapper}>
+          {getLayout(<Component {...pageProps} />)}
+        </main>
+      }
       <Footer />
     </>
   );

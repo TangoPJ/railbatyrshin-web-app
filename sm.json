@@ -1,7 +1,5 @@
 {
   "apiEndpoint": "https://rail-batyrshin.prismic.io/api/v2",
-  "libraries": [
-    "@/slices"
-  ],
+  "libraries": ["@/slices"],
   "_latest": "0.5.2"
 }

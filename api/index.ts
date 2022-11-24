@@ -12,7 +12,7 @@ const getBlogPostsAPI = async (params: any) => {
       Prismic.Predicates.at('document.type', 'blog_post'),
       {
         orderings: '[my.blog_post.date desc]',
-        ...params
+        ...params,
       }
     );
     return response;
